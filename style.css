@@ -1,3 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*not overflowed list*/
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -22,6 +40,7 @@ p {
   letter-spacing: 1px;
   font-size: larger;
   font-style: italic;
+  font-weight: 100;
 }
 
 #first {
@@ -38,12 +57,34 @@ p {
   height: 30px;
   text-decoration: black;
   font-weight: bold;
-  background-color: chartreuse;
+  background-color: #7fff00;
 }
-.menu-bar {
-  position: fixed;
-  height: 90%;
+
+ul {
+  /* word-spacing: normal; */
+  list-style-type: none;
+  margin: 0; /*Set margin and paddng = 0 to */
+  padding: 0; /*ignore browser default settings*/
+  margin-top: 10px;
+  margin-left: 20px;
 }
-nav {
-  background-color: darkorange;
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  /* margin-right: 20px; */
+  padding-right: 8px;
+  background-color: none;
+  text-decoration: none;
+}
+
+.menubar {
+  display: flex;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #0b142c;
 }
